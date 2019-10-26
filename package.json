@@ -1,6 +1,6 @@
 {
-  "name": "fullstack-monorepo",
-  "version": "0.0.0",
+  "name": "nxbased-nest-angular",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
