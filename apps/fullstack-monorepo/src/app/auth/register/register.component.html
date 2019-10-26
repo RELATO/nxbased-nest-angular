@@ -1,0 +1,16 @@
+<a [routerLink]="['/login']">Login</a>
+<form class="login-form" [formGroup]="form" (ngSubmit)="submit()">
+  <h1>Register</h1>
+  <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
+  <button
+    class="submit-button"
+    type="submit"
+    mat-raised-button
+    [disabled]="pending$ | async"
+  >
+    Submit
+  </button>
+  <div class="mat-error" *ngIf="(error$ | async) as message">
+    {{ message }}
+  </div>
+</form>
